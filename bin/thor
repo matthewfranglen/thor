@@ -7,6 +7,9 @@ var Metrics = require('../metrics')
   , path = require('path')
   , os = require('os');
 
+// Ignore self signed certificate errors
+process.env.NODE_TLS_REJECT_UNAUTHORIZED = "0";
+
 //
 // Setup the Command-Line Interface.
 //
